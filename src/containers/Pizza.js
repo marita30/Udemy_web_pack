@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import classes from './PizzaImage.css';
+import PizzaImage from '../components/PizzaImage/PizzaImage';
 
-const pizzaImage = (props) => (
-    <div className={classes.pizzaImage}>
+class Pizza extends Component {
+    render (){
+        return (
+            <div>
+                <h1> The Pizza </h1>
+                <PizzaImage />
+            </div>
+        );
+    }
+}
 
-    </div>
-);
 
-
-export default pizzaImage;
+export default Pizza;
